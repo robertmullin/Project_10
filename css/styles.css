@@ -1,0 +1,179 @@
+
+/* --- BASE STYLES --- */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.search {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid green;
+    font-size: 1.1em;
+}
+
+.wrap {
+    display: flex;
+    width: 100%;
+    height: 810px;
+}
+
+.profoak {
+    position: relative;
+    background: url("/img/profoakweb.png");
+    background-size: cover;
+    width: 50%;
+}
+
+.dialogue {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left: 15%; 
+    bottom: 30px;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px;
+    border: 5px dashed green;
+    border-radius: 15px;
+}
+
+.text {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left; 
+    padding: none;
+    margin: 0;
+}
+
+.pokeIcon {
+    width: 50px;
+    position: absolute;
+    background: url("/img/Pok%C3%A9_Ball.svg") left center no-repeat;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.pokedexHeader {
+    display: block;
+    background-color: rgba(76, 175, 80, 0.9);
+    width: 60%;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 3px solid green;
+}
+
+.pokedexTitle {
+    margin: 0;  
+    font-family: 'Orbitron', sans-serif;
+}
+
+#pokeSearch-page {
+    width: 50%;
+    margin: 0 auto;
+    border-left: 5px dashed green;
+    transition: background 1s ease;
+    background: url("/img/pokeMapWeb.png");
+    background-size: cover;
+}
+
+#pokeSearch-page:hover {
+    transition: background 1s ease;
+    background: url("/img/pokeMapWebHover.png");
+    background-size: cover;
+}
+
+.pokedexBtn {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 40px;
+    border: 3px solid green;
+    border-radius: 15px;
+    background-color: rgba(76, 175, 80, 0.9);
+    transition: background .5s ease;
+}
+
+.pokedexBtn:hover {
+    cursor: pointer;
+    background-color: green;
+    font-weight: bold;
+}
+
+.ui-btn {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4em;
+    display: block;
+    padding-top: 3px;
+}
+
+.pokeInfo {
+    display: block;
+    margin: 0 auto;
+}
+
+#pokeDetails {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 50px;
+}
+
+.pokeImg {
+    width: 250px;
+    border: 3px solid green;
+    border-radius: 25px;
+    background: url("/img/pokeResultBgrnd.png");
+    background-size: cover;
+}
+
+.pokeLi {
+    background-color: rgba(76, 175, 80, 0.9);
+    border: 3px solid green;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.pokeStarters {
+    border-top: 5px dashed green;
+    background: url("/img/Lilycove_City.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+

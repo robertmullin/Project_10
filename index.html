@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Gallery</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="css/simplelightbox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   <div class="wrap">
+    <div class="profoak">
+        
+        <div class="dialogue">
+            <p class="text">I'm Professor Oak! There are 699 Pokemon! That's a lot of Pokemon! Use this Pokedex to search for Pokemon by name or number between 1 and 699!</p>
+            
+        </div>
+        
+    </div>
+    <!-- app search page-->
+    <div data-role="page" id="pokeSearch-page">
+        <div class="pokedexHeader" data-role="header" data-theme="b">
+            <h1 class="pokedexTitle">Pokedex!</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <form id="pokeForm" action="#pokeDetails-page" method="post" onsubmit="return false;">
+                <div>
+                   
+                    <input class="search" type="text" name="pokeInput" id="pokeInput" placeholder="Name/Number" value="">
+                    
+                </div>
+        <br>
+        <div class="pokedexBtn">
+            
+            <a class="ui-btn" onclick="pokeSubmit();">Search</a>
+            
+        </div>
+    </form>
+    <div class="pokeInfo">
+    <ul data-role="listview" data-inset="true" id="pokeDetails">
+    </ul>
+    </div>
+    </div>
+   </div>
+</div>
+
+<div class="pokeStarters">
+    <ul class="pokeStarterList">
+       
+        <li class="starterPokemon">
+            <a href=""><img src="" alt=""></a>
+        </li>
+        
+        <li class="starterPokemon">
+            <a href=""><img src="" alt=""></a>
+        </li>
+        
+        <li class="starterPokemon">
+            <a href=""><img src="" alt=""></a>
+        </li>
+        
+        <li class="starterPokemon">
+            <a href=""><img src="" alt=""></a>
+        </li>
+        
+        <li class="starterPokemon">
+            <a href=""><img src="" alt=""></a>
+        </li>
+        
+        <li class="starterPokemon">
+            <a href=""><img src="" alt=""></a>
+        </li>
+    </ul>
+</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script> 
+ 
+</body>
+</html>
