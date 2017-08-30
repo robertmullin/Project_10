@@ -85,74 +85,14 @@
         </li>
     </ul>
 </div>
- 
-   
-   
-<!-- <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-<div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-        <img class="modal-image" src="img/charmander.png">
-        <h2>Name:</h2>
-        <p>Lorem ipsum</p>
-        <h2>Type:</h2>
-        <p>Lorem.</p>
-        <h2>Description:</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque asperiores architecto aperiam amet porro iure, molestias quod ex nemo nostrum hic pariatur minima sit corporis ad! Amet repellat nulla recusandae?</p>
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-        <img src="img_fjords_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-        <img src="img_mountains_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-        <img src="img_lights_wide.jpg" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
-    </div>
-  </div>
-</div> -->
     
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script> 
     
     <!-- <script src="js/modal.js"></script> -->
     
-<!-- Modal -->
+<!-- Modal Charmander -->
 <div id="charModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -165,9 +105,9 @@
       <div class="modal-wrap">
           <div class="modal-body">
             <p><strong>Name:</strong></p><p id="charName">html</p>
-            <p><strong>Type 1:</strong></p><p id="charType1"></p>
-            <p><strong>Type 2:</strong></p><p id="charType2"></p>
-            <p><strong>Description:</strong></p><p id="charBody">Some text.</p>
+            <p><strong>ID #:</strong></p><p id="charID"></p>
+            <p><strong>Type:</strong></p><p id="charType"></p>
+            <p><strong>Base Experience:</strong></p><p id="charXP">Some text.</p>
           </div>
           <div class="modal-image">
               <img id="charImg" src="" alt="">
@@ -181,7 +121,7 @@
   </div>
 </div>
 
-<!-- Modal 2 -->
+<!-- Modal 2 Squirtle -->
 
 <div id="squirtleModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -190,11 +130,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Squirtle</h4>
       </div>
+      <div class="modal-wrap">
       <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
+            <p><strong>Name:</strong></p><p class="bodyinfo" id="squirtName">html</p>
+            <p><strong>ID #:</strong></p><p class="bodyinfo"  id="squirtID"></p>
+            <p><strong>Type:</strong></p><p class="bodyinfo"  id="squirtType"></p>
+            <p><strong>Base Experience:</strong></p><p id="squirtXP">Some text.</p>
+          </div>
+          <div class="modal-image">
+              <img id="squirtImg" src="" alt="">
+          </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
@@ -203,7 +151,7 @@
   </div>
 </div>
 
-<!-- Modal 3 -->
+<!-- Modal 3 Pikachu -->
 
 <div id="pikaModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -212,11 +160,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Pikachu</h4>
       </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
+       <div class="modal-wrap">
+        <div class="modal-body">
+            <p><strong>Name:</strong></p><p id="pikaName">html</p>
+            <p><strong>ID #:</strong></p><p id="pikaID"></p>
+            <p><strong>Type:</strong></p><p id="pikaType"></p>
+            <p><strong>Base Experience:</strong></p><p id="pikaXP">Some text.</p>
+          </div>
+          <div class="modal-image">
+              <img id="pikaImg" src="" alt="">
+          </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
@@ -225,7 +181,7 @@
   </div>
 </div>
 
-<!-- Modal 4 -->
+<!-- Modal 4 Chimchar -->
 
 <div id="chimModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -234,11 +190,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Chimchar</h4>
       </div>
+      <div class="modal-wrap">
       <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
+            <p><strong>Name:</strong></p><p id="chimName">html</p>
+            <p><strong>ID #:</strong></p><p id="chimID"></p>
+            <p><strong>Type:</strong></p><p id="chimType"></p>
+            <p><strong>Base Experience:</strong></p><p id="chimXP">Some text.</p>
+          </div>
+          <div class="modal-image">
+              <img id="chimImg" src="" alt="">
+          </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
@@ -247,7 +211,7 @@
   </div>
 </div>
 
-<!-- Modal 5 -->
+<!-- Modal 5 Treecko -->
 
 <div id="treeModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -256,11 +220,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Treecko</h4>
       </div>
+      <div class="modal-wrap">
       <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
+            <p><strong>Name:</strong></p><p id="treeName">html</p>
+            <p><strong>ID #:</strong></p><p id="treeID"></p>
+            <p><strong>Type:</strong></p><p id="treeType"></p>
+            <p><strong>Base Experience:</strong></p><p id="treeXP">Some text.</p>
+          </div>
+          <div class="modal-image">
+              <img id="treeImg" src="" alt="">
+          </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
@@ -278,11 +250,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Froakie</h4>
       </div>
+      <div class="modal-wrap">
       <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
+            <p><strong>Name:</strong></p><p id="froakName">html</p>
+            <p><strong>ID #:</strong></p><p id="froakID"></p>
+            <p><strong>Type:</strong></p><p id="froakType"></p>
+            <p><strong>Base Experience:</strong></p><p id="froakXP">Some text.</p>
+          </div>
+          <div class="modal-image">
+              <img id="froakImg" src="" alt="">
+          </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>

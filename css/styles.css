@@ -232,7 +232,8 @@ a {
 }
 
 .modal-body {
-    width: 60%;
+    width: 50%;
+    text-transform: uppercase;
 }
 
 .modal-image {
@@ -241,10 +242,11 @@ a {
 
 .modal-image img {
     width: 200px;
-    margin: 0 auto;
+    
 }
 
 .modal-header,
 .modal-footer {
     background-color: rgba(76, 175, 80, 0.9);
 }
+
