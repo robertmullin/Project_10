@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Gallery</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="css/simplelightbox.min.css">
@@ -54,32 +54,41 @@
     <ul class="pokeStarterList">
        
         <li class="starterPokemon">
-            <img src="img/charmander.png" onclick="openModal();currentSlide(1)" alt="">
+            <!--<img src="img/charmander.png" onclick="openModal();currentSlide(1)" alt="">-->
+            <img src="img/charmander.png" alt="">
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#charModal">More Info</button>
         </li>
         
         <li class="starterPokemon">
-            <a href=""><img src="img/squirtle.png" alt=""></a>
+            <img src="img/squirtle.png" alt="">
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#squirtleModal">More Info</button>
         </li>
         
         <li class="starterPokemon">
-            <a href=""><img src="img/pikachu.png" alt=""></a>
+            <img src="img/pikachu.png" alt="">
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#pikaModal">More Info</button>
         </li>
         
         <li class="starterPokemon">
-            <a href=""><img src="img/chimchar.png" alt=""></a>
+            <img src="img/chimchar.png" alt="">
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#chimModal">More Info</button>
         </li>
         
         <li class="starterPokemon">
-            <a href=""><img src="img/treecko.png" alt=""></a>
+            <img src="img/treecko.png" alt="">
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#treeModal">More Info</button>
         </li>
         
         <li class="starterPokemon">
-            <a href=""><img src="img/froakie.png" alt=""></a>
+            <img src="img/froakie.png" alt="">
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#froakieModal">More Info</button>
         </li>
     </ul>
 </div>
+ 
    
-<div id="myModal" class="modal">
+   
+<!-- <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
 <div class="modal-content">
 
@@ -132,12 +141,157 @@
       <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
     </div>
   </div>
-</div>
+</div> -->
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script> 
-    <script src="js/modal.js"></script> 
     
- 
+    <!-- <script src="js/modal.js"></script> -->
+    
+<!-- Modal -->
+<div id="charModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Charmander Details</h4>
+      </div>
+      <div class="modal-wrap">
+          <div class="modal-body">
+            <p><strong>Name:</strong></p><p id="charName">html</p>
+            <p><strong>Type 1:</strong></p><p id="charType1"></p>
+            <p><strong>Type 2:</strong></p><p id="charType2"></p>
+            <p><strong>Description:</strong></p><p id="charBody">Some text.</p>
+          </div>
+          <div class="modal-image">
+              <img id="charImg" src="" alt="">
+          </div>
+      </div>  
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal 2 -->
+
+<div id="squirtleModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal 3 -->
+
+<div id="pikaModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal 4 -->
+
+<div id="chimModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal 5 -->
+
+<div id="treeModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal 6 -->
+
+<div id="froakieModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/modal.js"></script> 
+
 </body>
 </html>

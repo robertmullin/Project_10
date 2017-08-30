@@ -1,38 +1,25 @@
+//Maybe?
+    
+$.ajax({ 
+   type: "GET",
+   dataType: "json",
+   url: "https://pokeapi.co/api/v2/pokemon/4",
+   success: function(data){        
+       console.log(data);
+       
+       
+$( "#charName" ).replaceWith( data.name );
 
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
+$( "#charType1" ).replaceWith( data.id );
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
+$( "#charType2" ).replaceWith( data.types[0].type.name );
 
-var slideIndex = 1;
-showSlides(slideIndex);
+$( "#charBody" ).replaceWith(  );
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+$("#charImg").attr('src', data.sprites.front_default );
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+   }
+});
 
+// https://jsfiddle.net/vxf7rg0L/68/
