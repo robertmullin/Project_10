@@ -8,270 +8,294 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-    <link link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type='text/css'>
-    <link rel="stylesheet" href="css/simplelightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-   <div class="wrap">
-    <div class="profoak">
-        
-        <div class="dialogue">
-            <p class="text">I'm Professor Oak! There are 699 Pokemon! That's a lot of Pokemon! Use this Pokedex to search for Pokemon by name or number between 1 and 699!</p>
-            
-        </div>
-        
-    </div>
-    <!-- app search page-->
-    <div data-role="page" id="pokeSearch-page">
-        <div class="pokedexHeader" data-role="header" data-theme="b">
-            <h1 class="pokedexTitle">Pokedex!</h1>
-        </div>
-        <div data-role="main" class="ui-content">
-            <form id="pokeForm" action="#pokeDetails-page" method="post" onsubmit="return false;">
-                <div>
-                   
-                    <input class="search" type="text" name="pokeInput" id="pokeInput" placeholder="Name/Number" value="">
-                    
-                </div>
-        <br>
-        <div class="pokedexBtn">
-            
-            <a class="ui-btn" onclick="pokeSubmit();">Search</a>
-            
-        </div>
-    </form>
-    <div class="pokeInfo">
-    <ul data-role="listview" data-inset="true" id="pokeDetails">
-    </ul>
-    </div>
-    </div>
-   </div>
-</div>
+    <div class="wrap">
+        <div class="profoak">
 
-<div class="pokeStarters">
-    <ul class="pokeStarterList">
-       
-        <li class="starterPokemon">
-            <!--<img src="img/charmander.png" onclick="openModal();currentSlide(1)" alt="">-->
-            <img src="img/charmander.png" alt="">
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#charModal">More Info</button>
-        </li>
-        
-        <li class="starterPokemon">
-            <img src="img/squirtle.png" alt="">
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#squirtleModal">More Info</button>
-        </li>
-        
-        <li class="starterPokemon">
-            <img src="img/pikachu.png" alt="">
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#pikaModal">More Info</button>
-        </li>
-        
-        <li class="starterPokemon">
-            <img src="img/chimchar.png" alt="">
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#chimModal">More Info</button>
-        </li>
-        
-        <li class="starterPokemon">
-            <img src="img/treecko.png" alt="">
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#treeModal">More Info</button>
-        </li>
-        
-        <li class="starterPokemon">
-            <img src="img/froakie.png" alt="">
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#froakieModal">More Info</button>
-        </li>
-    </ul>
-</div>
-    
+            <div class="dialogue">
+                <p class="text">I'm Professor Oak! There are 699 Pokemon! That's a lot of Pokemon! Use this Pokedex to search for Pokemon by name or number between 1 and 699!</p>
+
+            </div>
+
+        </div>
+        <!-- app search page-->
+        <div data-role="page" id="pokeSearch-page">
+            <div class="pokedexHeader" data-role="header" data-theme="b">
+                <h1 class="pokedexTitle">Pokedex!</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <form id="pokeForm" action="#pokeDetails-page" method="post" onsubmit="return false;">
+                    <div>
+
+                        <input class="search" type="text" name="pokeInput" id="pokeInput" placeholder="Name/Number" value="">
+
+                    </div>
+                    <br>
+                    <div class="pokedexBtn">
+
+                        <a class="ui-btn" onclick="pokeSubmit();">Search</a>
+
+                    </div>
+                </form>
+                <div class="pokeInfo">
+                    <ul data-role="listview" data-inset="true" id="pokeDetails">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pokeStarters">
+        <ul class="pokeStarterList">
+
+            <li class="starterPokemon">
+                <!--<img src="img/charmander.png" onclick="openModal();currentSlide(1)" alt="">-->
+                <img src="img/charmander.png" alt="">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#charModal">More Info</button>
+            </li>
+
+            <li class="starterPokemon">
+                <img src="img/squirtle.png" alt="">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#squirtleModal">More Info</button>
+            </li>
+
+            <li class="starterPokemon">
+                <img src="img/pikachu.png" alt="">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#pikaModal">More Info</button>
+            </li>
+
+            <li class="starterPokemon">
+                <img src="img/chimchar.png" alt="">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#chimModal">More Info</button>
+            </li>
+
+            <li class="starterPokemon">
+                <img src="img/treecko.png" alt="">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#treeModal">More Info</button>
+            </li>
+
+            <li class="starterPokemon">
+                <img src="img/froakie.png" alt="">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#froakieModal">More Info</button>
+            </li>
+        </ul>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script> 
-    
+    <script src="js/script.js"></script>
+
     <!-- <script src="js/modal.js"></script> -->
-    
-<!-- Modal Charmander -->
-<div id="charModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Charmander Details</h4>
-      </div>
-      <div class="modal-wrap">
-          <div class="modal-body">
-            <p><strong>Name:</strong></p><p id="charName">html</p>
-            <p><strong>ID #:</strong></p><p id="charID"></p>
-            <p><strong>Type:</strong></p><p id="charType"></p>
-            <p><strong>Base Experience:</strong></p><p id="charXP">Some text.</p>
-          </div>
-          <div class="modal-image">
-              <img id="charImg" src="" alt="">
-          </div>
-      </div>  
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+    <!-- Modal Charmander -->
+    <div id="charModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-  </div>
-</div>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Charmander Details</h4>
+                </div>
+                <div class="modal-wrap">
+                    <div class="modal-body">
+                        <p><strong>Name:</strong></p>
+                        <p id="charName">html</p>
+                        <p><strong>ID #:</strong></p>
+                        <p id="charID"></p>
+                        <p><strong>Type:</strong></p>
+                        <p id="charType"></p>
+                        <p><strong>Base Experience:</strong></p>
+                        <p id="charXP">Some text.</p>
+                    </div>
+                    <div class="modal-image">
+                        <img id="charImg" src="" alt="Charmander in action">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
 
-<!-- Modal 2 Squirtle -->
-
-<div id="squirtleModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Squirtle</h4>
-      </div>
-      <div class="modal-wrap">
-      <div class="modal-body">
-            <p><strong>Name:</strong></p><p class="bodyinfo" id="squirtName">html</p>
-            <p><strong>ID #:</strong></p><p class="bodyinfo"  id="squirtID"></p>
-            <p><strong>Type:</strong></p><p class="bodyinfo"  id="squirtType"></p>
-            <p><strong>Base Experience:</strong></p><p id="squirtXP">Some text.</p>
-          </div>
-          <div class="modal-image">
-              <img id="squirtImg" src="" alt="">
-          </div>
         </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
     </div>
 
-  </div>
-</div>
+    <!-- Modal 2 Squirtle -->
 
-<!-- Modal 3 Pikachu -->
+    <div id="squirtleModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-<div id="pikaModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Squirtle</h4>
+                </div>
+                <div class="modal-wrap">
+                    <div class="modal-body">
+                        <p><strong>Name:</strong></p>
+                        <p class="bodyinfo" id="squirtName">html</p>
+                        <p><strong>ID #:</strong></p>
+                        <p class="bodyinfo" id="squirtID"></p>
+                        <p><strong>Type:</strong></p>
+                        <p class="bodyinfo" id="squirtType"></p>
+                        <p><strong>Base Experience:</strong></p>
+                        <p id="squirtXP">Some text.</p>
+                    </div>
+                    <div class="modal-image">
+                        <img id="squirtImg" src="" alt="Squirtle in action">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Pikachu</h4>
-      </div>
-       <div class="modal-wrap">
-        <div class="modal-body">
-            <p><strong>Name:</strong></p><p id="pikaName">html</p>
-            <p><strong>ID #:</strong></p><p id="pikaID"></p>
-            <p><strong>Type:</strong></p><p id="pikaType"></p>
-            <p><strong>Base Experience:</strong></p><p id="pikaXP">Some text.</p>
-          </div>
-          <div class="modal-image">
-              <img id="pikaImg" src="" alt="">
-          </div>
         </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
     </div>
 
-  </div>
-</div>
+    <!-- Modal 3 Pikachu -->
 
-<!-- Modal 4 Chimchar -->
+    <div id="pikaModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-<div id="chimModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Pikachu</h4>
+                </div>
+                <div class="modal-wrap">
+                    <div class="modal-body">
+                        <p><strong>Name:</strong></p>
+                        <p id="pikaName">html</p>
+                        <p><strong>ID #:</strong></p>
+                        <p id="pikaID"></p>
+                        <p><strong>Type:</strong></p>
+                        <p id="pikaType"></p>
+                        <p><strong>Base Experience:</strong></p>
+                        <p id="pikaXP">Some text.</p>
+                    </div>
+                    <div class="modal-image">
+                        <img id="pikaImg" src="" alt="Pikachu in action">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Chimchar</h4>
-      </div>
-      <div class="modal-wrap">
-      <div class="modal-body">
-            <p><strong>Name:</strong></p><p id="chimName">html</p>
-            <p><strong>ID #:</strong></p><p id="chimID"></p>
-            <p><strong>Type:</strong></p><p id="chimType"></p>
-            <p><strong>Base Experience:</strong></p><p id="chimXP">Some text.</p>
-          </div>
-          <div class="modal-image">
-              <img id="chimImg" src="" alt="">
-          </div>
         </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
     </div>
 
-  </div>
-</div>
+    <!-- Modal 4 Chimchar -->
 
-<!-- Modal 5 Treecko -->
+    <div id="chimModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-<div id="treeModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Chimchar</h4>
+                </div>
+                <div class="modal-wrap">
+                    <div class="modal-body">
+                        <p><strong>Name:</strong></p>
+                        <p id="chimName">html</p>
+                        <p><strong>ID #:</strong></p>
+                        <p id="chimID"></p>
+                        <p><strong>Type:</strong></p>
+                        <p id="chimType"></p>
+                        <p><strong>Base Experience:</strong></p>
+                        <p id="chimXP">Some text.</p>
+                    </div>
+                    <div class="modal-image">
+                        <img id="chimImg" src="" alt="Chmchar in action">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Treecko</h4>
-      </div>
-      <div class="modal-wrap">
-      <div class="modal-body">
-            <p><strong>Name:</strong></p><p id="treeName">html</p>
-            <p><strong>ID #:</strong></p><p id="treeID"></p>
-            <p><strong>Type:</strong></p><p id="treeType"></p>
-            <p><strong>Base Experience:</strong></p><p id="treeXP">Some text.</p>
-          </div>
-          <div class="modal-image">
-              <img id="treeImg" src="" alt="">
-          </div>
         </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
     </div>
 
-  </div>
-</div>
+    <!-- Modal 5 Treecko -->
 
-<!-- Modal 6 -->
+    <div id="treeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-<div id="froakieModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Treecko</h4>
+                </div>
+                <div class="modal-wrap">
+                    <div class="modal-body">
+                        <p><strong>Name:</strong></p>
+                        <p id="treeName">html</p>
+                        <p><strong>ID #:</strong></p>
+                        <p id="treeID"></p>
+                        <p><strong>Type:</strong></p>
+                        <p id="treeType"></p>
+                        <p><strong>Base Experience:</strong></p>
+                        <p id="treeXP">Some text.</p>
+                    </div>
+                    <div class="modal-image">
+                        <img id="treeImg" src="" alt="Treecko in action">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Froakie</h4>
-      </div>
-      <div class="modal-wrap">
-      <div class="modal-body">
-            <p><strong>Name:</strong></p><p id="froakName">html</p>
-            <p><strong>ID #:</strong></p><p id="froakID"></p>
-            <p><strong>Type:</strong></p><p id="froakType"></p>
-            <p><strong>Base Experience:</strong></p><p id="froakXP">Some text.</p>
-          </div>
-          <div class="modal-image">
-              <img id="froakImg" src="" alt="">
-          </div>
         </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
     </div>
 
-  </div>
-</div>
+    <!-- Modal 6 -->
 
-<script src="js/modal.js"></script> 
+    <div id="froakieModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Froakie</h4>
+                </div>
+                <div class="modal-wrap">
+                    <div class="modal-body">
+                        <p><strong>Name:</strong></p>
+                        <p id="froakName">html</p>
+                        <p><strong>ID #:</strong></p>
+                        <p id="froakID"></p>
+                        <p><strong>Type:</strong></p>
+                        <p id="froakType"></p>
+                        <p><strong>Base Experience:</strong></p>
+                        <p id="froakXP">Some text.</p>
+                    </div>
+                    <div class="modal-image">
+                        <img id="froakImg" src="" alt="Froakie in action">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
 
 </body>
+
 </html>

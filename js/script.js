@@ -1,4 +1,4 @@
-// API
+// API Search
 
 function pokeSubmit(){
     var param = document.getElementById("pokeInput").value;
